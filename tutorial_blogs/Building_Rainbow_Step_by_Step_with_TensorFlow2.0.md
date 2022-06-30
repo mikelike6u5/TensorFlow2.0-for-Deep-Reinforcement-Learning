@@ -17,9 +17,9 @@ The following methods are all `value-function approximation` and `gradient-based
 
 ## 1>Linear 
 Using a linear function to approximate the value function(always the action value).  
-$$
+$
 \hat v(s, w) \doteq w^Tx(s) \doteq \sum \limits_{i=1}^d w_i x_i
-$$  
+$
 $w$ is the parameters, $x(s)$ is called a <u>*feature vector*</u> representing state $s$, and the state $s$ is the images(frames) observed by the agent in most time. So a linear approximator implemented with *tensorflow* can be just a fully-connected layer.  
 ``` python
 import tensorflow as tf
